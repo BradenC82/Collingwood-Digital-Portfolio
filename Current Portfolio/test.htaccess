@@ -1,7 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.collingwooddigital\.com [OR]
-RewriteCond %{REQUEST_URI} /index\.html$
-RewriteRule (.*?)(index\.html)?$ http://collingwooddigital.com$1 [NE,R=301,L]
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
